@@ -1,0 +1,309 @@
+:root {
+    /* COLOR */
+    --color-primary: #E7E3D9;
+    --color-secondary: #0F1A17;
+    --color-accent: #1F3A2E;
+    --color-accent-secondary: #B6DFCA;
+    --color-light: #F7F5F0;
+
+    /* WHITE SPACE  */
+    --space-s: 2rem;
+    --space-m: 4.5rem;
+    --space-l: 8rem;
+
+    /* TEXT MAX WIDTH */
+    --maxw-txt-l: 50rem;
+}
+
+/* Reset styles  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* max width for page + margin auto to center on screens larger than 1600px */
+body {
+    max-width: 1600px;
+    margin: auto;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+/* image styles to make them block (no space under) and  make them adapt to the parents size*/
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+.btn {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--color-accent-secondary);
+    font-size: 1.2rem;
+}
+
+.btn-primary a {
+    color: black;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+#logo {
+    color: var(--color-accent-secondary);
+    width: 16px;
+}
+
+.logo,
+.menu-btn,
+footer a,
+.burger-menu a {
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+}
+
+.logo:hover,
+.menu-btn:hover,
+footer a:hover,
+.burger-menu a:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.header__img {
+    opacity: .5;
+}
+
+/* NAV & BURGER MENU */
+.nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* menu burger button */
+.fa-solid {
+    color: var(--color-accent-secondary);
+    font-size: 2.2rem;
+    padding: .5rem;
+}
+
+.menu-btn {
+    background-color: inherit;
+    border: none;
+    align-self: flex-end;
+}
+
+.menu-btn:focus-visible,
+.burger-menu a:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 4px;
+}
+
+/* the drop down menu element */
+.burger-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 99;
+    width: 10rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: var(--color-accent);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    /* menu slide in */
+    transform: translateX(14rem);
+    transition: transform 0.2s ease-in, opacity 0.2s ease;
+}
+
+.burger-menu.show {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.burger-menu a,
+footer a {
+    text-decoration: none;
+    color: var(--color-accent-secondary);
+    line-height: 3rem;
+    /* so they can scale on hover */
+    display: inline-block;
+}
+
+/* FIX COLOR / EFFECTS */
+.btn-primary:hover {
+    background-color: var(--color-accent);
+}
+
+/* LANDING PAGE */
+.home__intro {
+    padding: 2rem 1rem 0;
+}
+
+.home__intro p {
+    margin-top: .5rem;
+    max-width: 40rem;
+}
+
+.gallery {
+    display: grid;
+    max-width: 950px;
+    gap: 1rem;
+    margin: var(--space-m) auto;
+}
+
+@media screen and (min-width: 600px) {
+    .home__intro {
+        max-width: 60rem;
+        margin: auto;
+        padding: 3rem 0 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-rows: auto auto;
+    }
+
+    .gallery__cow {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        aspect-ratio: 4/3;
+    }
+
+    .gallery__kettle {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        aspect-ratio: 4/3;
+    }
+
+    .gallery__hills {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+}
+
+/* GALLERY PAGE GALLERY */
+.gallery__images {
+    max-width: 950px;
+    margin: var(--space-m) auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gallery__images h2 {
+    padding: 0 0 .5rem 1rem;
+}
+
+figcaption {
+    padding: 1rem;
+}
+
+.gallery__hills-after {
+    margin-top: 2rem;
+}
+
+.gallery__images__cow,
+.gallery__images__kettle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    .gallery__images__cow,
+    .gallery__images__kettle {
+        flex-direction: row;
+    }
+}
+
+/* ABOUT */
+.about {
+    padding: 1rem 1rem var(--space-m);
+}
+
+.about__text p {
+    margin-top: .5rem;
+}
+
+.about__img {
+    max-width: 20rem;
+    margin: 1.5rem auto 0;
+}
+
+.about__text {
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 600px) {
+    .about__img-text {
+        display: flex;
+        align-items: center;
+        max-width: 54rem;
+        margin: auto;
+    }
+
+    .about__text {
+        padding: 2rem;
+    }
+
+    .about__img {
+        margin-top: 1rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    padding: 3rem 1rem 1.5rem;
+    background-color: var(--color-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
