@@ -74,6 +74,10 @@ header {
     width: 16px;
 }
 
+.logo {
+    fill: var(--color-accent-secondary);
+}
+
 .logo,
 .menu-btn,
 footer a,
