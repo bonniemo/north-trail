@@ -1,8 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="logo" viewBox="0 0 47 44">
-    <path d="M23.5 0.75C36.1118 0.75 46.25 10.3098 46.25 22C46.25 33.6902 36.1118 43.25 23.5 43.25C10.8882 43.25 0.75 33.6902 0.75 22C0.75 10.3098 10.8882 0.75 23.5 0.75Z" stroke="currentColor" stroke-width="1.5" fill="transparent"/>
-    <path d="M31.0287 2C20.5287 9 34.5 23.5 44.5 14" stroke="currentColor" stroke-width="0.8" fill="transparent"/>
-    <path d="M18.25 42.5V34.6778M18.25 28L16.75 29.1667M18.25 28L19.75 29.1667M18.25 28V30M18.25 30L16 32M18.25 30L20.25 32M18.25 30V32M18.25 32L21 34.5M18.25 32L15.5 34.5M18.25 32V34.6778M18.25 34.6778V34.8034M18.25 34.8034L15 37M18.25 34.8034L21 37" stroke="currentColor" stroke-width="0.6" fill="transparent"/>
-    <path d="M11 39V28.5M11 14L9.5 15.5M11 14L12.5 15.5M11 14V16.5M11 16.5V17M11 16.5V17.5M11 17.5L9 20M11 17.5L13 20M11 17.5V21.5M11 21.5L8 24M11 21.5L14 24M11 21.5V24.5M11 24.5L8 27.5M11 24.5L14 27.5M11 24.5V28.5M11 28.5L8 32M11 28.5L14 32" stroke="currentColor" stroke-width="0.6" fill="transparent"/>
+    <path d="M23.5 0.75C36.1118 0.75 46.25 10.3098 46.25 22C46.25 33.6902 36.1118 43.25 23.5 43.25C10.8882 43.25 0.75 33.6902 0.75 22C0.75 10.3098 10.8882 0.75 23.5 0.75Z" 
+          stroke="currentColor" stroke-width="1.5" fill="none"/>
+          
+    <path d="M31.0287 2C20.5287 9 34.5 23.5 44.5 14" 
+          stroke="currentColor" stroke-width="0.8" fill="none"/>
+          
+    <path d="M18.25 42.5V34.6778M18.25 28L16.75 29.1667M18.25 28L19.75 29.1667M18.25 28V30M18.25 30L16 32M18.25 30L20.25 32M18.25 30V32M18.25 32L21 34.5M18.25 32L15.5 34.5M18.25 32V34.6778M18.25 34.6778V34.8034M18.25 34.8034L15 37M18.25 34.8034L21 37" 
+          stroke="currentColor" stroke-width="0.6" fill="none"/>
+          
+    <path d="M11 39V28.5M11 14L9.5 15.5M11 14L12.5 15.5M11 14V16.5M11 16.5V17M11 16.5V17.5M11 17.5L9 20M11 17.5L13 20M11 17.5V21.5M11 21.5L8 24M11 21.5L14 24M11 21.5V24.5M11 24.5L8 27.5M11 24.5L14 27.5M11 24.5V28.5M11 28.5L8 32M11 28.5L14 32" 
+          stroke="currentColor" stroke-width="0.6" fill="none"/>
   </symbol>
 </svg>
