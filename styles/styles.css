@@ -154,13 +154,13 @@ footer a:hover,
     pointer-events: none;
     visibility: hidden;
     /* menu slide in */
-    transform: translateX(14rem);
+    transform: translateY(-3rem);
     transition: transform 0.2s ease-in, opacity 0.2s ease;
 }
 
 .burger-menu.show {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
     pointer-events: auto;
     visibility: visible;
 }
